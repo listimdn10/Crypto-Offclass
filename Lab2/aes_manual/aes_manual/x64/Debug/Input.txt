@@ -1,0 +1,14 @@
+aes_manual.exe genkey 256 HEX key.hex
+
+aes_manual.exe encrypt HEX key.hex Text plaintext.txt Binary cipher.txt
+
+aes_manual.exe decrypt HEX key.hex Binary cipher.txt HEX rcv.txt
+
+
+
+aes_manual.exe genkey 256 Binary aes_key.key
+
+aes_manual.exe encrypt Binary aes_key.key Text plaintext.txt Binary cipher.txt
+
+aes_manual.exe decrypt Binary aes_key.key Binary cipher.txt Text rcv.txt
+
